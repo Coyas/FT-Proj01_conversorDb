@@ -36,7 +36,7 @@ label_1 = Label(app, textvariable=texto, bg="#FFFFFF", fg="#000000", font="Arial
 # label_1.pack()
 
 texto1.set("Valor Inicial")
-label_Initvalue = Label(app, textvariable=texto1, font="Arial 13", bg="#FFFFFF").grid(row=1, columnspan=1, sticky="WE")
+labelInitvalue = Label(app, textvariable=texto1, font="Arial 13", bg="#FFFFFF").grid(row=1, columnspan=1, sticky="WE")
 entr1.grid(row=1, column=1)
 texto2.set("Calculo Final => ")
 label_Initvalue = Label(app, textvariable=texto2, font="Arial 13", bg="#FFFFFF").grid(row=2, columnspan=1, sticky="WE")

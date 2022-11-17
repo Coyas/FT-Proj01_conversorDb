@@ -1,7 +1,7 @@
 from tkinter import *
 
 # funcoes
-def converterValor():
+def converterValor() -> None:
     
     valor = textbox.get()
 
@@ -9,7 +9,7 @@ def converterValor():
     valorFinal = valor + "FInal"
 
     label_Final = Label(app, text="Converte %s para %s = %s" % (valor, "Dbu", valorFinal))
-    label_Final.grid()
+    label_Final.grid(row=4, column=1)
     # btn['state'] = DESABLED
 
 # def inserirTexto():
@@ -22,12 +22,12 @@ app.geometry("400x600")
 
 # Criar os Widgets
 label_1 = Label(app, text="Entre Com O Valor", pady=10, font="Arial 18 bold")
-textbox = Entry(app, width=49)
+textbox = Entry(app, width=30)
 btn = Button(app, text="Converter", command=converterValor)
 
 # Organizar os widgets
-label_1.grid()
-textbox.grid()
-btn.grid()
+label_1.grid(row=1, column=2)
+textbox.grid(row=2, column=2)
+btn.grid(row=3, column=2)
 
 app.mainloop()
